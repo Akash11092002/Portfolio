@@ -5,7 +5,7 @@ const Services_Data=[
         s_desc:'Combining both frontend and backend skills to build complete web applications'
     },
     {
-        s_no:'01',
+        s_no:'02',
         s_name:'Software Development',
         s_desc:' Developing desktop or web-based applications tailored to specific user needs. '
     },
