@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div id='home' className='hero'>
     
-    <h1> <span>I'm Akash Maurya </span>, web developer based in India</h1>
+    <h1>I'm <span> Akash Maurya </span>, web developer based in India</h1>
    
     <div className='hero-action'>
     <div className='hero-connect'> <AnchorLink className='anchor-link' offset={50} href='#contact'> Connect with me </AnchorLink>
