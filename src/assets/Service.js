@@ -17,7 +17,7 @@ const Services_Data=[
     {
         s_no:'04',
         s_name:'Version Control',
-        s_desc:'roficiency in using Git for version control and collaboration, including branching, merging, and pull requests. '
+        s_desc:'Proficiency in using Git for version control and collaboration, including branching, merging, and pull requests. '
     },
     {
         s_no:'05',
