@@ -1,0 +1,58 @@
+/* Footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px; /* Adjusted padding for better responsiveness */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically for small screens */
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Space between different sections */
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column; /* Align links and social icons vertically */
+    gap: 15px; /* Space between links and social icons */
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Font size for links and icons */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #00aced;
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 16px; /* Font size for copyright text */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Devices (Tablets, 768px to 991px) */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Align sections in a row for larger screens */
+        gap: 40px; /* Space between different sections */
+    }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) {
+    .footer-container {
+        gap: 80px; /* Increased gap for very large screens */
+    }
+}

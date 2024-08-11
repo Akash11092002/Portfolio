@@ -1,0 +1,132 @@
+:root {
+    --main-gradient: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.6%);
+    --background-color: #1e1e1e;
+    --text-color: #d8d8d8;
+    --input-background: #32323c;
+    --button-gradient: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.6%);
+    --font-family: 'Outfit', sans-serif;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 80px 20px; /* Adjusted margin for responsiveness */
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.contact-title h1 {
+    padding: 0 15px;
+    font-size: 3rem; /* Adjusted for responsiveness */
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width for larger screens */
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1 {
+    font-size: 3rem; /* Adjusted font size */
+    font-weight: 700;
+    background: var(--main-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+    max-width: 100%;
+    color: var(--text-color);
+    font-size: 1.5rem; /* Adjusted font size */
+    line-height: 1.6;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-right label {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-right input, .contact-right textarea {
+    border: none;
+    border-radius: var(--border-radius);
+    background: var(--input-background);
+    color: #A0A0A0;
+    font-size: 1rem;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.contact-right input {
+    height: 50px; /* Adjusted height */
+}
+
+.contact-right textarea {
+    height: 150px; /* Adjusted height */
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: var(--button-gradient);
+    font-size: 1rem; /* Smaller font size */
+    padding: 10px 30px; /* Reduced padding for a smaller button */
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-submit:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,123 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: #0a0d0f;
+    color: white;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 170px;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+/* Link styling */
+.anchor-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.anchor-link:hover {
+    color: #DA7C25;
+}
+
+/* Button styling */
+.nav-connect {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.6%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile menu button styling */
+.nav-mob-open, .nav-mob-close {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-mob-open {
+    font-size: 30px;
+}
+
+.nav-mob-close {
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    /* Hide desktop menu and show mobile menu button */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 350px;
+        height: 100%;
+        background-color: #1f0016;
+        flex-direction: column;
+        align-items: start;
+        padding: 80px 20px;
+        gap: 30px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .nav-menu.open {
+        right: 0;
+    }
+
+    .nav-mob-open {
+        display: block;
+    }
+
+    .nav-mob-close {
+        display: block;
+    }
+
+    /* Hide the "Connect" button on mobile */
+    .nav-connect {
+        display: none;
+    }
+}
+
+/* Example of hamburger icon and close icon */
+.hamburger-icon, .close-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
